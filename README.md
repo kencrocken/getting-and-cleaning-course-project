@@ -31,7 +31,7 @@ Certain assumptions were made given the instructions provided for the project.
 The script does not attempt to download the file or unzip the file.
 The script is written according to this assumption that the data set was already downloaded and unpacked into the working directory.
 
-```R
+```splus
 testX <- read.table("UCI HAR Dataset/test/X_test.txt") # -- measurement data (561 variables)
 testY <- read.table("UCI HAR Dataset/test/Y_test.txt") # -- activity data (one variable)
 testSubject <- read.table("UCI HAR Dataset/test/subject_test.txt") # -- subject data (one variable)
@@ -80,7 +80,7 @@ colnames(trainX) <- features
 #####Appropriately labels the data set with descriptive activity names.
 The original data set used numbers to identify the various activities the subjects performed.  The numbers were replaced with descriptive names.
 
-```Rscript
+```splus
 aggregatedDF$activity[aggregatedDF$activity == 1] <- "walking"
 aggregatedDF$activity[aggregatedDF$activity == 2] <- "walking_upstairs"
 aggregatedDF$activity[aggregatedDF$activity == 3] <- "walking_downstairs"
@@ -92,12 +92,12 @@ aggregatedDF$activity[aggregatedDF$activity == 6] <- "laying"
 #####Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 After cleaning the data, combining the data sets, enhancing the variable names and adding descriptive activity names a second data set was created by aggregating the data by subject and activity, and calculating the mean of each set of subject/activity pair sets.
 
-```Rscript
+```splus
 aggregatedDF <- aggregate(totalDF, by=list(totalDF$activity,totalDF$subject), FUN=mean, na.rm=TRUE)
 ```
 
 Lastly the tidy data set of aggregated data is written as a table to the working directory.
-```Rscript
+```splus
 write.table(aggregatedDF, "course-project.txt", sep="\t")
 ```
 
