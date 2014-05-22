@@ -80,7 +80,7 @@ colnames(trainX) <- features
 #####Appropriately labels the data set with descriptive activity names.
 The original data set used numbers to identify the various activities the subjects performed.  The numbers were replaced with descriptive names.
 
-```r
+```splus
 aggregatedDF$activity[aggregatedDF$activity == 1] <- "walking"
 aggregatedDF$activity[aggregatedDF$activity == 2] <- "walking_upstairs"
 aggregatedDF$activity[aggregatedDF$activity == 3] <- "walking_downstairs"
