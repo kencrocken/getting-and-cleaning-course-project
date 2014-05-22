@@ -80,7 +80,7 @@ colnames(trainX) <- features
 #####Appropriately labels the data set with descriptive activity names.
 The original data set used numbers to identify the various activities the subjects performed.  The numbers were replaced with descriptive names.
 
-```splus
+```Rscript
 aggregatedDF$activity[aggregatedDF$activity == 1] <- "walking"
 aggregatedDF$activity[aggregatedDF$activity == 2] <- "walking_upstairs"
 aggregatedDF$activity[aggregatedDF$activity == 3] <- "walking_downstairs"
@@ -92,12 +92,12 @@ aggregatedDF$activity[aggregatedDF$activity == 6] <- "laying"
 #####Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 After cleaning the data, combining the data sets, enhancing the variable names and adding descriptive activity names a second data set was created by aggregating the data by subject and activity, and calculating the mean of each set of subject/activity pair sets.
 
-```splus
+```Rscript
 aggregatedDF <- aggregate(totalDF, by=list(totalDF$activity,totalDF$subject), FUN=mean, na.rm=TRUE)
 ```
 
 Lastly the tidy data set of aggregated data is written as a table to the working directory.
-```splus
+```Rscript
 write.table(aggregatedDF, "course-project.txt", sep="\t")
 ```
 
