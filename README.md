@@ -59,7 +59,9 @@ trainX <- trainX[,columnSelection]
 ```
 
 #####Uses descriptive variable names to name the columns in the data set.
-Variables in the original dataset were manipulated to appear more readable.  While there is apparent disagreement in standards for the variable names, e.g., some experts suggest all lower case, some suggest camel case, some suggest not to use '.', some experts suggest the use of the '.' -- the main goal was to produce easily readable variable names that do not interfer with the manipulation of the data.
+Variables in the original dataset were manipulated to appear more readable.  While there is apparent disagreement in standards for the variable names, e.g., some experts suggest all lower case, some suggest camel case, some suggest not to use '.', some experts suggest the use of the '.'
+
+######The main goal was to produce easily readable variable names that do not interfer with the manipulation of the data.
 
 To that goal, I choose to use camel case and '.' given the length of the variable names.
 ```splus
