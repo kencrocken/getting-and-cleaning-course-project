@@ -31,7 +31,7 @@ Certain assumptions were made given the instructions provided for the project.
 The script does not attempt to download the file or unzip the file.
 The script is written according to this assumption that the data set was already downloaded and unpacked into the working directory.
 
-```splus
+```R
 testX <- read.table("UCI HAR Dataset/test/X_test.txt") # -- measurement data (561 variables)
 testY <- read.table("UCI HAR Dataset/test/Y_test.txt") # -- activity data (one variable)
 testSubject <- read.table("UCI HAR Dataset/test/subject_test.txt") # -- subject data (one variable)
