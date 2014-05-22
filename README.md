@@ -108,10 +108,11 @@ write.table(aggregatedDF, "course-project.txt", sep="\t")
 >> head(a[,c(1:5)])
 ```
 
-  subject           activity tBodyAcc.Mean.X tBodyAcc.Mean.Y tBodyAcc.Mean.Z
-1       1            walking       0.2773308    -0.017383819      -0.1111481
-2       1   walking_upstairs       0.2554617    -0.023953149      -0.0973020
-3       1 walking_downstairs       0.2891883    -0.009918505      -0.1075662
-4       1            sitting       0.2612376    -0.001308288      -0.1045442
-5       1           standing       0.2789176    -0.016137590      -0.1106018
-6       1             laying       0.2215982    -0.040513953      -0.1132036
+  subject  |         activity| tBodyAcc.Mean.X| tBodyAcc.Mean.Y| tBodyAcc.Mean.Z|
+  ---------|-----------------|----------------|----------------|----------------|
+1       1 |           walking       0.2773308    -0.017383819      -0.1111481
+2       1 |  walking_upstairs       0.2554617    -0.023953149      -0.0973020
+3       1 |walking_downstairs       0.2891883    -0.009918505      -0.1075662
+4       1 |           sitting       0.2612376    -0.001308288      -0.1045442
+5       1 |          standing       0.2789176    -0.016137590      -0.1106018
+6       1 |           laying       0.2215982    -0.040513953      -0.1132036
