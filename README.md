@@ -64,7 +64,7 @@ trainX <- trainX[,columnSelection]
 #####Uses descriptive variable names to name the columns in the data set.
 Variables in the original dataset were manipulated to appear more readable.  While there is apparent disagreement in standards for the variable names, e.g., some suggest not to use '.', some experts suggest the use of the '.'
 
-######The main goal was to produce easily readable variable names that do not interfer with the manipulation of the data.  Please see the [code book](CodeBook.md)for more information regarding the conventions selected for naming the variables.
+######The main goal was to produce easily readable variable names that do not interfer with the manipulation of the data.  Please see the [code book](CodeBook.md) for more information regarding the conventions selected for naming the variables.
 
 To that goal, I choose to use all lower case and '.' With some variable names being long, I find that using a '.' improves readability.  Please see the [code book](CodeBook.md) for more detail.
 ```splus
@@ -101,7 +101,7 @@ After cleaning the data, combining the data sets, enhancing the variable names a
 aggregatedDF <- aggregate(totalDF, by=list(totalDF$activity,totalDF$subject), FUN=mean, na.rm=TRUE)
 ```
 
-Lastly the tidy data set of aggregated data is written as a table to the working directory.
+Lastly the tidy data set of aggregated data is written as a tab delimited text file to the working directory.
 ```splus
 write.table(aggregatedDF, "course-project.txt", sep="\t")
 ```
