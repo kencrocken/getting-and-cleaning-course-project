@@ -13,7 +13,11 @@ The requirements of the project are:
 * Create a code book, called CodeBook.md, that describes the variables, the data, and any transformations or work that you performed to clean up the data. 
 * Create a README.md in the repo with describing the scripts and how they are connected. 
 
-The data represents a set of observations regarding human activity recognition by use of smartphones.  For more information on the data please see the Code Book.
+The data set was provided by the professor and represents a set of observations regarding human activity recognition by use of smartphones.  Collected by Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita at the University of Genoa
+
+>Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+For more information on the data please see the Code Book.
 
 To accomplish the project requirements we were create one R script called run_analysis.R that:
 
