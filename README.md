@@ -23,11 +23,10 @@ To accomplish the project requirements we were create one R script called run_an
 * Appropriately labels the data set with descriptive activity names. 
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-####Merges the training and test sets to create one data set.
+#####Merges the training and test sets to create one data set.
 The project provided the data set for download on the course project page for the course.  For more information see the Code Book.
 
-Certain assumptions were made given the instructions provided for the project.
-####The data set was already present in the users working directory.
+######Certain assumptions were made given the instructions provided for the project. The data set was already present in the users working directory.
 The script does not attempt to download the file or unzip the file.
 The script is written according to this assumption that the data set was already downloaded and unpacked into the working directory.
 
