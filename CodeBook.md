@@ -1,7 +1,5 @@
-######Getting and Cleaning DataData Science, JHU coursera.org
-#####Course Project
+######Course Project - Getting and Cleaning DataData Science, JHU coursera.org
 ##Code Book
-===
 The data set was provided by the course instructors and consists data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
 A full description of the data can be found at [UCI Machine Learning Repository, 
