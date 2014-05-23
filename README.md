@@ -107,9 +107,5 @@ write.table(aggregatedDF, "course-project.txt", sep="\t")
 ```
 
 ####Snapshot of the data.
-```
->> a <- read.table("course-project.txt", sep="\t")
->> head(a[,c(1:5)])
-```
 
 ![image](tidy-data-snapshot.png)
