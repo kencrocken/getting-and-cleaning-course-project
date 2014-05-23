@@ -17,7 +17,7 @@ The data set was provided by the professor and represents a set of observations 
 
 >Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-For more information on the data please see the Code Book.
+For more information on the data please see the [code book](CodeBook.md).
 
 To accomplish the project requirements we were create one R script called run_analysis.R that:
 
@@ -28,7 +28,7 @@ To accomplish the project requirements we were create one R script called run_an
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 #####Merges the training and test sets to create one data set.
-The project provided the data set for download on the course project page for the course.  For more information see the Code Book.
+The project provided the data set for download on the course project page for the course.  For more information see the [code book](CodeBook.md).
 
 ######Certain assumptions were made given the instructions provided for the project. The data set was already present in the users working directory.
 The script does not attempt to download the file or unzip the file.
@@ -62,11 +62,11 @@ trainX <- trainX[,columnSelection]
 ```
 
 #####Uses descriptive variable names to name the columns in the data set.
-Variables in the original dataset were manipulated to appear more readable.  While there is apparent disagreement in standards for the variable names, e.g., some experts suggest all lower case, some suggest camel case, some suggest not to use '.', some experts suggest the use of the '.'
+Variables in the original dataset were manipulated to appear more readable.  While there is apparent disagreement in standards for the variable names, e.g., some suggest not to use '.', some experts suggest the use of the '.'
 
-######The main goal was to produce easily readable variable names that do not interfer with the manipulation of the data.  Please see the code book for more information regarding the conventions selected for naming the variables.
+######The main goal was to produce easily readable variable names that do not interfer with the manipulation of the data.  Please see the [code book](CodeBook.md)for more information regarding the conventions selected for naming the variables.
 
-To that goal, I choose to use camel case and '.' given the length of the variable names.
+To that goal, I choose to use all lower case and '.' With some variable names being long, I find that using a '.' improves readability.  Please see the [code book](CodeBook.md) for more detail.
 ```splus
 features <- read.table("UCI HAR Dataset/features.txt") # -- column numbers and names (two variables)
 features <- features[,2] # -- subset to just the column names (one variable)
