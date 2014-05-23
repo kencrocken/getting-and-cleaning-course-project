@@ -18,11 +18,11 @@ Further UCI provides the following information for each record in the dataset:
 * Its activity label. 
 * An identifier of the subject who carried out the experiment.
 
-For the purposes of this project the Triaxial Acceleration and Triaxial Angular were not needed.
+The data set was provided as a zipped file and the instructions were to unzip the file into the working directory of RStudio - such that a script will assume the appropriate files are in the working directory.
 
-The data set was provided as a zipped file and there were instructions to unzip the file into the working directory of RStudio - such that a script will assume the appropriate files are in the working directory.
+For the purposes of this project the Triaxial Acceleration and Triaxial Angular were not needed - such data was contained in the Inertial Signals directories of the data set.
 
-The file structure of the data set is as follows:
+The assumed file structure of the data set is as follows:
 ```
 /Working Directory
 └──UCI HAR Dataset
@@ -41,3 +41,28 @@ The file structure of the data set is as follows:
 	    ├── subject_train.txt
 	    └── y_train.txt
 ```
+The above files are described as follows:
+
+- 'README.txt'
+
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+
+- 'features.txt': List of all features.
+
+- 'activity_labels.txt': Links the class labels with their activity name.
+
+- 'train/X_train.txt': Training set.
+
+- 'train/y_train.txt': Training labels.
+
+- 'test/X_test.txt': Test set.
+
+- 'test/y_test.txt': Test labels.
+
+The following files are available for the train and test data. Their descriptions are equivalent. 
+
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+For the purposes of this project we were to merge the test and train data sets,
+extract only the measurements on the mean and standard deviation for each measurement, 
+modify the variable names for readability and tidiness, modify the activity labels to be descriptive.
