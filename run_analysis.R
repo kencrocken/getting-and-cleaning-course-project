@@ -13,11 +13,15 @@ features <- features[,2] # -- subset to just the column names (one variable)
 # Clean up the column names
 features <- gsub("[[:punct:]]", "", features) # -- remove punct characters; e.g, (), _, -, etc ...
 features <- gsub("fBodyBody","fBody",features) # -- replace "fBodyBody" with "fBody"
-features <- gsub("X",".X",features) # -- add a . before 'X' for readability
-features <- gsub("Y",".Y",features) # -- add a . before 'Y' for readability
-features <- gsub("Z",".Z",features) # -- add a . before 'Z' for readability
-features <- gsub("mean",".Mean",features) # -- add a . before and capitalize'mean' for readability
-features <- gsub("std",".STD",features) # -- add a . before and capitalize'std' for readability
+features <- gsub("X",".x",features) # -- add a . before 'X' for readability
+features <- gsub("Y",".y",features) # -- add a . before 'Y' for readability
+features <- gsub("Z",".z",features) # -- add a . before 'Z' for readability
+features <- gsub("mean",".mean",features) # -- add a . before 'mean' for readability
+features <- gsub("Mean",".mean",features)
+features <- gsub(".meangravity","gravity",features)
+features <- gsub("std",".std",features) # -- add a . before 'std' for readability
+# lower case
+features <- tolower(features)
 # Insert column names
 colnames(testX) <- features 
 colnames(trainX) <- features
