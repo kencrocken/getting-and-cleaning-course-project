@@ -7,7 +7,7 @@ trainY <- read.table("UCI HAR Dataset/train/Y_train.txt") # -- activity data (on
 trainSubject <- read.table("UCI HAR Dataset/train/subject_train.txt") # -- subject data (one variable)
 
 # --- Add column names, adjust for readability and standards;
-# --- opted to retain camel case and add .  
+# --- lower case and add .  
 features <- read.table("UCI HAR Dataset/features.txt") # -- column numbers and names (two variables)
 features <- features[,2] # -- subset to just the column names (one variable)
 # Clean up the column names
