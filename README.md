@@ -19,13 +19,22 @@ The data set was provided by the professor and represents a set of observations 
 
 For more information on the data please see the [code book](CodeBook.md).
 
-To accomplish the project requirements we were create one R script called run_analysis.R that:
+To accomplish the project requirements we were create one R script called run_analysis.R.  The following steps are performed by run_analysis.R:
 
-* Merges the training and the test sets to create one data set.
-* Extracts only the measurements on the mean and standard deviation for each measurement. 
-* Uses descriptive variable names to name the columns in the data set.
-* Appropriately labels the data set with descriptive activity names. 
-* Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+*Read data set
+  *Test Data, Activity & Subjects
+  *Train Data, Activity & Subjects
+*Read variable names
+  *Subset to just names
+  *Clean up column names
+*Insert Column names into Test and Train DF
+*Subset to required columns
+*Combine the Test and Train DF
+*Rename first two columns “subject” & activity
+*Aggregate data by activity and subject and apply and take the mean of the variables
+*Two extra columns are added with aggregate - remove those columns
+*Provide descriptive names to the activity data
+*Write table “course-project.txt” tab delimited data set
 
 #####Merges the training and test sets to create one data set.
 The project provided the data set for download on the course project page for the course.  For more information see the [code book](CodeBook.md).
