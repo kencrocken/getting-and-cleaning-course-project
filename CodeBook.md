@@ -62,9 +62,9 @@ The following files are available for the train and test data. Their description
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
-For the purposes of this project we were to merge the test and train data sets,
-extract only the measurements on the mean and standard deviation for each measurement, 
-modify the variable names for readability and tidiness, modify the activity labels to be descriptive.
+#####For the purposes of this project we were to merge the test and train data sets, extract only the measurements on the mean and standard deviation for each measurement, modify the variable names for readability and tidiness, modify the activity labels to be descriptive.
+
+######The data set created and written by run_analysis.R contains only the mean of each variable for each subject/activty pair.
 
 Accordingly, after examining the information provided in the UCI dataset, variables which were determined to meet the criteria as measurements of mean and standard deviation based on the descriptions and variable name were extracted and the names were modified to meet with accepted standards.
 
